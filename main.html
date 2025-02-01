@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; /* Evenly distribute items in the row */
+      align-items: center; /* Center items vertically */
+      flex-wrap: wrap; /* Allow items to wrap onto the next row */
+      width: 100%; /* Make sure the holder takes full width */
+    }
+
+    .item {
+      background-color: aqua;
+      padding: 10px;
+      border: 1px solid black;
+      width: 50px; /* Set width for the items */
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  </style>
 </head>
-
 <body>
-<div class="holder">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="holder">
+    <div class="item">2</div>
+    <div class="item">1</div>
+    <div class="item">3</div>
+    <div class="item">4</div> <!-- New item, will go to the next row if necessary -->
+  </div>
 </body>
-
 </html>
